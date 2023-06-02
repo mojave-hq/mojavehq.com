@@ -2,5 +2,6 @@
 
 return [
     'production' => true,
-    'baseUrl' => 'http://mojavehq.com',
+
+    'baseUrl' => 'https://mojavehq.com',
 ];

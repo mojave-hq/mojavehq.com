@@ -5,9 +5,11 @@ return [
 
     'baseUrl' => 'http://mojavehq.test',
 
-    'title' => 'Mojave HQ',
+    'siteName' => 'Mojave HQ',
 
-    'description' => 'A digital public-benefit agency.',
+    'siteDescription' => 'A digital public-benefit agency.',
+
+    'siteAuthor' => 'Steven Roland',
 
     'collections' => [
         'projects' => [
