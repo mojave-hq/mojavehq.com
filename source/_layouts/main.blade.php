@@ -6,10 +6,19 @@
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <meta name="description" content="{{ $page->description }}">
         <title>{{ $page->title }}</title>
+
+        <link rel="preconnect" href="https://rsms.me">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+
+        @stack('scripts')
     </head>
-    <body class="text-gray-900 font-sans antialiased">
+    <body class="font-sans antialiased text-gray-900">
+        @include('_partials.header')
+        
         @yield('body')
+
+        @include('_partials.footer')
     </body>
 </html>
