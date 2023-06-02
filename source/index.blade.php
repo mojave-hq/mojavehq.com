@@ -1,5 +1,4 @@
 ---
-title: Welcome
 pagination:
     collection: projects
     perPage: 4
