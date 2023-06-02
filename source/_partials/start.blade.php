@@ -1,10 +1,10 @@
 @push('scripts')
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    {{-- <script>
-        function onSubmit(token) {
-          document.getElementById("start-project-form").submit();
+    <script>
+        function onSubmit() {
+            document.getElementById("start-project-form").submit();
         }
-    </script> --}}
+    </script>
 @endpush
 
 <div class="py-24 bg-white sm:py-32" id="contact">
@@ -94,14 +94,9 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-center mt-6 gap-x-6">
-                        <button type="submit" data-callback="grecaptcha.execute();" class="rounded-md bg-mojave-500 px-3.5 py-2.5 text-sm font-semibold uppercase transition-colors duration-200 text-white shadow-sm hover:bg-mojave-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mojave-500">
+                        <button data-sitekey="6Lf8110mAAAAAHPWGz_j3SBiu8MH0xavIstdxjmf" data-callback="onSubmit" class="g-recaptcha rounded-md bg-mojave-500 px-3.5 py-2.5 text-sm font-semibold uppercase transition-colors duration-200 text-white shadow-sm hover:bg-mojave-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mojave-500">
                             Let's get started
                         </button>
-                    </div>
-                    <div class="g-recaptcha"
-                        data-sitekey="6Lf8110mAAAAAHPWGz_j3SBiu8MH0xavIstdxjmf"
-                        data-callback="onSubmit"
-                        data-size="invisible">
                     </div>
                 </div>
             </form>
