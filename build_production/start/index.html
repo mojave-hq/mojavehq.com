@@ -9,11 +9,15 @@
 
         <link rel="preconnect" href="https://rsms.me">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=611a12b52438062e2ff38deaa22f0a42">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=9f5170513a0c4c4bb94cabd6fa3d7818">
         <script defer src="/assets/build/js/main.js?id=eff51b6e9fea37869dc4bc32f2dce28f"></script>
 
             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
+    <script>
+        function onSubmit() {
+            document.getElementById("start-project-form").submit();
+        }
+    </script>
     </head>
     <body class="font-sans antialiased text-gray-900">
         <header
@@ -224,14 +228,9 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-center mt-6 gap-x-6">
-                        <button type="submit" data-callback="grecaptcha.execute();" class="rounded-md bg-mojave-500 px-3.5 py-2.5 text-sm font-semibold uppercase transition-colors duration-200 text-white shadow-sm hover:bg-mojave-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mojave-500">
+                        <button data-sitekey="6Lf8110mAAAAAHPWGz_j3SBiu8MH0xavIstdxjmf" data-callback="onSubmit" class="g-recaptcha rounded-md bg-mojave-500 px-3.5 py-2.5 text-sm font-semibold uppercase transition-colors duration-200 text-white shadow-sm hover:bg-mojave-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mojave-500">
                             Let's get started
                         </button>
-                    </div>
-                    <div class="g-recaptcha"
-                        data-sitekey="6Lf8110mAAAAAHPWGz_j3SBiu8MH0xavIstdxjmf"
-                        data-callback="onSubmit"
-                        data-size="invisible">
                     </div>
                 </div>
             </form>
