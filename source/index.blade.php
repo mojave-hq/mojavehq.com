@@ -1,9 +1,3 @@
----
-pagination:
-    collection: projects
-    perPage: 4
----
-
 @extends('_layouts.main')
 
 @section('body')
