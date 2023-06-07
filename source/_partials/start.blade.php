@@ -16,10 +16,12 @@
             </p>
         </div>
         <div class="max-w-2xl mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-none">
-            <form action="https://fieldgoal.io/f/jMwfNf" method="POST" class="max-w-4xl mx-auto" id="start-project-form">
+            <form action="{{ $page->form_action }}" method="POST" class="max-w-4xl mx-auto" id="start-project-form">
                 <div class="space-y-12">
                     <div class="pb-12 border-b border-gray-900/10">
                         <div class="grid grid-cols-1 mt-10 gap-x-6 gap-y-8 sm:grid-cols-6">
+                            <x-form.input name="property" id="property" type="hidden" value="{{ $page->siteName }}" />
+
                             <div class="col-span-full">
                                 <x-form.label for="name" value="Name" required />
                                 <x-form.input name="name" id="name" type="text" class="mt-2" required />
@@ -94,7 +96,7 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-center mt-6 gap-x-6">
-                        <button data-sitekey="6Lf8110mAAAAAHPWGz_j3SBiu8MH0xavIstdxjmf" data-callback="onSubmit" class="g-recaptcha rounded-md bg-mojave-500 px-3.5 py-2.5 text-sm font-semibold uppercase transition-colors duration-200 text-white shadow-sm hover:bg-mojave-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mojave-500">
+                        <button data-sitekey="{{ $page->captcha_sitekey }}" data-callback="onSubmit" class="g-recaptcha rounded-md bg-mojave-500 px-3.5 py-2.5 text-sm font-semibold uppercase transition-colors duration-200 text-white shadow-sm hover:bg-mojave-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mojave-500">
                             Let's get started
                         </button>
                     </div>

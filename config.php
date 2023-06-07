@@ -11,6 +11,10 @@ return [
 
     'siteAuthor' => 'Steven Roland',
 
+    'form_action' => 'https://fieldgoal.io/f/jMwfNf',
+        
+    'captcha_sitekey' => '6Lf8110mAAAAAHPWGz_j3SBiu8MH0xavIstdxjmf',
+
     'collections' => [
         'projects' => [
             'author' => 'Steven Roland', // Default author, if not provided in a post
