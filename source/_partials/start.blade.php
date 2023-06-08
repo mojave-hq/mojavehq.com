@@ -20,7 +20,7 @@
                 <div class="space-y-12">
                     <div class="pb-12 border-b border-gray-900/10">
                         <div class="grid grid-cols-1 mt-10 gap-x-6 gap-y-8 sm:grid-cols-6">
-                            <x-form.input name="property" id="property" type="hidden" value="{{ $page->siteName }}" />
+                            <x-form.input name="property" id="property" type="hidden" />
 
                             <div class="col-span-full">
                                 <x-form.label for="name" value="Name" required />
